@@ -1,5 +1,7 @@
 # Integration Architect Challenge
 
+[![Join the chat at https://gitter.im/currofy/integration-architect-challenge](https://badges.gitter.im/currofy/integration-architect-challenge.svg)](https://gitter.im/currofy/integration-architect-challenge?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## Diseña un API para la gestión de una ticketera electrónica
 
 ### Objetivo:
