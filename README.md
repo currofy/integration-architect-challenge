@@ -1,5 +1,7 @@
 # Integration Architect Challenge
 
+[![Join the chat at https://gitter.im/currofy/integration-architect-challenge](https://badges.gitter.im/currofy/integration-architect-challenge.svg)](https://gitter.im/currofy/integration-architect-challenge?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## Diseña un API para la gestión de una ticketera electrónica
 
 ### Objetivo:
@@ -31,7 +33,7 @@ De un cliente tenemos inicialmente el nombre y apellidos, su dirección de corre
 dirección física y número de teléfono. Queremos saber también los tickets de las compras que
 ha realizado.
 
-1. Ejercicio 1.  
+1. **Ejercicio 1.**  
    Diseña un API que permita construir una aplicación frontal para listar los tickets de un cliente,
    asociar un ticket, eliminar un ticket, etc. viendo para cada ticket el importe total, la tienda en la que ha sido comprado, la fecha y el número de artículos.
 
@@ -41,33 +43,33 @@ ha realizado.
 
    Deja el API diseñada en el directorio ./api.
 
-2. Ejercicio 2.  
+2. **Ejercicio 2.**  
    Suponiendo que vamos a guardar la información en una base de datos documental, diseña la estructura
    de los documentos a almacenar en la base de datos. Guarda dicha estructura en el directorio ./data/model.
 
-3. Ejercicio 3.  
+3. **Ejercicio 3.**  
    Conecta la aplicación spring boot del ejemplo, que actualmente está conectada con una base de datos
    h2, a una base de datos documental a tu elección. Explica la elección.
 
-4. Ejercicio 4.  
+4. **Ejercicio 4.**  
    Implementa **una** de las APIs diseñadas a tu elección.
 
-5. Ejercicio 5.  
+5. **Ejercicio 5.**  
    Si un API de modificación, tiene que ser implementando guardando la información en la base de datos
    documental y enviando un mensaje a un sistema de mensajería, de forma atómica,
    ¿cómo lo harías teniendo en cuenta que los orígenes pueden no ser transaccionales?
 
-6. Ejercicio 6.  
+6. **Ejercicio 6.**
    Si tuvieses que orquestar poder llamar a varias APIs de forma transaccional, ¿cómo lo harías?
 
 ## Algunas consideraciones:
 
-Esta prueba es una aplicación Spring Boot, si no estás familiarizado con el framework échale un ojo a las que indicamos en SpringBootHelp.md
+- Esta prueba es una aplicación Spring Boot, si no estás familiarizado con el framework échale un ojo a las que indicamos en [SpringBootHelp.md](/SpringBootHelp.md)
 
-Puedes usar el fichero answers.md dejar tus respuestas y comentarios.
+- Puedes usar el fichero [answers.md](/answers.md) dejar tus respuestas y comentarios.
 
-Puedes aplicar las mejoras que consideres. Esto es una primera versión, un experimento, que queremos ir mejorando con vuestras ideas consejos. Al final somos todos arquitectos, simplemente comparte tus razones, puedes usar answers.md o una PR.
+- Puedes aplicar las mejoras que consideres. Esto es una primera versión, un experimento, que queremos ir mejorando con vuestras ideas consejos. Al final somos todos arquitectos, simplemente comparte tus razones, puedes usar [answers.md](/answers.md) o una PR.
 
-Para los datos, monta la base de datos a tu elección, ya sea con una librería java que arranque el motor de base de datos en los tests, o bien arrancando una imagen docker (docker | cri-o | podman | etc.). Por favor deja las instrucciones correspondientes si es necesario arrancarla previamente al ciclo de construcción maven.
+- Para los datos, monta la base de datos a tu elección, ya sea con una librería java que arranque el motor de base de datos en los tests, o bien arrancando una imagen docker (docker | cri-o | podman | etc.). Por favor deja las instrucciones correspondientes si es necesario arrancarla previamente al ciclo de construcción maven.
 
-Finalmente, hemos creado una Room en Gitter para este ejercicio, cualquier cosa que necesites, dudas, comentarios, impresiones, quejas o sugerencias haznoslo saber.
+- Finalmente, hemos creado una [Room en Gitter](https://gitter.im/currofy/integration-architect-challenge) para este ejercicio, cualquier cosa que necesites, dudas, comentarios, impresiones, quejas o sugerencias haznoslo saber.
