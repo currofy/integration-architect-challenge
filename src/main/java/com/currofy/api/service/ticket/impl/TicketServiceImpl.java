@@ -22,9 +22,7 @@ import com.currofy.api.data.repository.TicketRepository;
 import com.currofy.api.service.exception.ServiceException;
 import com.currofy.api.service.ticket.TicketService;
 
-import lombok.extern.java.Log;
 
-@Log
 @Service
 public class TicketServiceImpl implements TicketService{
 
@@ -37,10 +35,8 @@ public class TicketServiceImpl implements TicketService{
 	@Override
 	public List<TicketDTO> getTicketsOfUser(String email) throws ServiceException {
 		
-		log.info("user mail: " + email);
 		List<TicketDTO> result = new ArrayList<>();
 		List<TicketModel> tickets = ticketRepo.findByCustomerEmail(email);
-		log.info("tickets #: " + tickets.size());
 		if (tickets.isEmpty()) {
 			throw new ServiceException((customerRepo.findByEmail(email)==null) ?
 										ExceptionCodeEnum.USER_NOT_FOUND:

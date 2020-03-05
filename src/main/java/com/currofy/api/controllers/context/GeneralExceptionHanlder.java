@@ -13,9 +13,6 @@ import org.springframework.web.servlet.NoHandlerFoundException;
 
 import com.currofy.api.core.dto.ErrorDTO;
 
-import lombok.extern.java.Log;
-
-@Log
 @ControllerAdvice
 public class GeneralExceptionHanlder {
 
@@ -23,8 +20,6 @@ public class GeneralExceptionHanlder {
 		
 	@ExceptionHandler({ Exception.class })
 	public ResponseEntity<ErrorDTO> exception(HttpServletRequest request, Exception exception) {
-		log.severe(exception.getMessage());
-		log.severe(request.getContextPath());
 		StringWriter sw = new StringWriter();
 		PrintWriter pw = new PrintWriter(sw);
 		exception.printStackTrace(pw);
