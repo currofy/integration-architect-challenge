@@ -1,0 +1,48 @@
+{
+	"ticketId": "string",
+	"articles": [{
+		"number": 0,
+		"article": {
+			"name": "string",
+			"description": "string",
+			"internalId": "string",
+			"size": "string",
+			"color": "string",
+			"materials": [
+				"string"
+			],
+			"prices": [{
+				"countryISOCode": "string",
+				"currenry": "string",
+				"price": 0
+			}],
+			"seasons": [
+				0
+			],
+			"photos": [
+				"string"
+			]
+		}
+	}],
+	"generateDate": 0,
+	"totalPrice": 0,
+	"store": {
+		"lon": 0,
+		"lat": 0,
+		"commercialArea": "string",
+		"name": "string",
+		"storeId": "string",
+		"salesEstimated": 0,
+		"sections": [
+			"string"
+		]
+	},
+	"customer": {
+		"id": "string",
+		"name": "string",
+		"surname": "string",
+		"email": "string",
+		"address": "string",
+		"phoneNumber": "string"
+	}
+}
